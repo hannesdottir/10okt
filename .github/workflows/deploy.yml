@@ -19,8 +19,9 @@ jobs:
           node-version: 16 # You can specify your desired Node.js version
 
       - name: Install Dependencies
-        run: npm install
-        run: npm ci
+        run: |
+          npm install
+          npm ci
 
       - name: Build
         run: npm run build 
