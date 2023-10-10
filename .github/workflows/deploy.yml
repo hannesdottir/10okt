@@ -19,10 +19,11 @@ jobs:
           node-version: 16 # You can specify your desired Node.js version
 
       - name: Install Dependencies
+        run: npm install
         run: npm ci
 
       - name: Build
-        run: npm run build
+        run: npm run build 
 
       - name: Deploy to GitHub Pages
         run: |
